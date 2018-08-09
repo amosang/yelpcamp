@@ -16,7 +16,7 @@ var commentRoutes       = require("./routes/comments"),
     campgroundRoutes    = require("./routes/campgrounds"),
     indexRoutes         = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp_v7");
+mongoose.connect("mongodb://amos:qwerty1@ds217452.mlab.com:17452/yelpcamp");  // Using mLab's DB instance.
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));  // "__dirname" is the dir in which the script is running.
