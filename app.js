@@ -17,7 +17,7 @@ var commentRoutes       = require("./routes/comments"),
     indexRoutes         = require("./routes/index");
 
 var db_url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v7" ;  // if env var is empty str, will use the backup string.
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect(db_url);
 // mongoose.connect("mongodb://localhost/yelp_camp_v7");
 //mongoose.connect("mongodb://amos:qwerty1@ds217452.mlab.com:17452/yelpcamp");  // Using mLab's DB instance.
 
